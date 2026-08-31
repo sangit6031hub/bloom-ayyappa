@@ -1,0 +1,36 @@
+site:
+  title: "Bloom Ayyappa Vratham Guide"
+  eyebrow: "Ayyappa Devotee Journey"
+  description: "A journey-based guide to the Sabarimala Mandala Vratham with temple route options."
+  hero:
+    eyebrow: "Sabarimala Mandala Vratham"
+    title: "Bloom Ayyappa Vratham Guide"
+    summary: "A journey-based guide to the temple path, the austerity period, the Irumudi preparation, the pilgrimage, and the final blessings."
+  nav_label: "Journey Map"
+
+vratham:
+  mandala_days: 41
+  start_date: "2026-12-16"
+  end_date: "2027-01-25"
+  pilgrimage_window: "December 16, 2026 to January 25, 2027"
+  note: "The observance begins with mala dharanam and ends with mala vimochanam after the final darshan."
+
+stages:
+  - slug: overview
+    title: "Overview"
+    file: "00-overview.md"
+  - slug: mala-dharanam
+    title: "Mala Dharanam (The Beginning)"
+    file: "01-mala-dharanam.md"
+  - slug: mandala-vratham
+    title: "Mandala Vratham (The Austerity Period)"
+    file: "02-mandala-vratham.md"
+  - slug: kettunira-pallekettu
+    title: "Kettunira / Pallekettu (The Preparation)"
+    file: "03-kettunira-pallekettu.md"
+  - slug: pilgrimage-darshan
+    title: "The Pilgrimage & Darshan (The Climax)"
+    file: "04-the-pilgrimage-darshan.md"
+  - slug: mala-vimochanam
+    title: "Mala Vimochanam (The Conclusion)"
+    file: "05-mala-vimochanam.md"
