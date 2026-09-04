@@ -114,7 +114,6 @@ function renderPageShell({
   kicker,
   bodyHtml,
   sectionTitle,
-  navItems,
   sideItems,
   cssPath,
   logoPath,
@@ -140,7 +139,6 @@ function renderPageShell({
           <p class="hero-summary">${escapeHtml(site.hero?.summary || 'A journey-based guide to the Mandala Vratham.')}</p>
         </div>
       </div>
-      <nav class="docs-nav" aria-label="Journey navigation">${navItems}</nav>
     </header>
 
     <main class="docs-shell">
@@ -169,7 +167,6 @@ function renderPageShell({
 }
 
 function renderHomePage() {
-  const navItems = stages.map((stage) => `<a href="docs/${stage.slug}.html">${escapeHtml(stage.title)}</a>`).join('');
   const sideItems = stages.map((stage) => `<li><a href="docs/${stage.slug}.html">${escapeHtml(stage.title)}</a></li>`).join('');
 
   const sections = stages
@@ -210,7 +207,6 @@ function renderHomePage() {
           <p class="hero-summary">${escapeHtml(site.hero?.summary || 'A journey-based guide to the Mandala Vratham.')}</p>
         </div>
       </div>
-      <nav class="docs-nav" aria-label="Journey navigation">${navItems}</nav>
     </header>
 
     <main class="docs-shell">
@@ -229,7 +225,6 @@ function renderHomePage() {
 
 function renderStagePage(stageConfig, index) {
   const doc = getStageDocument(stageConfig);
-  const navItems = stages.map((stage) => `<a href="${stage.slug === stageConfig.slug ? '#' : `${stage.slug}.html`}">${escapeHtml(stage.title)}</a>`).join('');
   const sideItems = stages.map((stage) => `<li><a href="${stage.slug === stageConfig.slug ? '#' : `${stage.slug}.html`}">${escapeHtml(stage.title)}</a></li>`).join('');
 
   return `<!DOCTYPE html>
@@ -252,7 +247,6 @@ function renderStagePage(stageConfig, index) {
           <p class="hero-summary">${escapeHtml(site.hero?.summary || 'A journey-based guide to the Mandala Vratham.')}</p>
         </div>
       </div>
-      <nav class="docs-nav" aria-label="Journey navigation">${navItems}</nav>
     </header>
 
     <main class="docs-shell">
